@@ -1,0 +1,12 @@
+/*Project variables*/
+
+:root {
+  --background-color: #6f5643;
+  --color1: #cc6b49;
+  --color2: #d2a24c;
+  --color3: #ece6c2;
+  --color4: #73bda8;
+  --white: #ffffff;
+  --black: #000;
+  --primary-font: "IBM Plex Mono", monospace;
+}
