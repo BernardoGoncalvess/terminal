@@ -13,11 +13,13 @@ html {
 body {
   font-family: var(--primary-font);
   font-size: 1.6rem;
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 0;
   height: 96vh;
-  background-color: var(--background-color);
+  background-color: var(--primary-background-color);
   color: var(--white);
+  display: flex;
+  justify-content: center;
 }
 
 /*
@@ -26,7 +28,6 @@ body {
 
 p {
   font-size: 1.4rem;
-  background-color: var(--color3);
   letter-spacing: 2px;
 }
 
@@ -34,41 +35,74 @@ p {
 * Main styles
 */
 
+/*Terminal prefix*/
 .terminal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   height: 100%;
   padding: 10px 20px;
   border: 2px solid var(--color3);
   border-radius: 25px;
-  width: 90%;
+  width: 96%;
+}
+
+.ascii {
+  margin: 0 0 20px 15px;
+}
+
+.ascii p {
+  width: 15%;
+  margin: 0;
+  display: inline-block;
+  color: var(--color1);
+  text-shadow: 1px 1px 10px var(--color1);
+}
+
+.ascii span {
+  width: 85%;
+  margin-bottom: 200px;
+}
+
+.help {
+  margin: 10px 15px;
+  text-shadow: 1px 1px 10px var(--color4);
+}
+
+.terminalHeader {
+  width: 100%;
 }
 
 .terminalHeader .container {
   display: flex;
+  width: 100%;
 }
 
-.prefix_user {
+.prefix {
   background-color: var(--color1);
   border-radius: 50px;
   margin: 10px 15px;
   margin-right: 0;
   padding-left: 5px;
-  text-align: left;
-  width: 70px;
-  clip-path: polygon(0% 0%, 75% 0%, 86% 50%, 75% 100%, 0% 100%);
+  text-align: center;
+  width: 15%;
 }
 
-.prefix_local {
-  background-color: var(--color4);
-  border-radius: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 5px;
-  text-align: left;
-  width: 80px;
-  clip-path: polygon(0% 0%, 75% 0%, 86% 50%, 75% 100%, 0% 100%);
-}
-
-.prefix_local::after {
+.prefix::after {
   content: " $";
   color: var(--black);
+}
+
+/*Terminal prompt*/
+
+.container #prompt {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 80%;
+  margin-left: 15px;
+  color: var(--white);
 }
