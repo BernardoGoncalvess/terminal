@@ -1,4 +1,4 @@
-// Pegar o HTML e o que está dentro
+/*// Pegar o HTML e o que está dentro
 const asciiText = document.querySelector(".ascii");
 
 // Guardar a formatação original do HTML e estilos
@@ -18,4 +18,4 @@ function typingAnimation() {
   }
 }
 
-typingAnimation();
+typingAnimation();*/

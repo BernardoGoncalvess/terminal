@@ -13,42 +13,20 @@
     />
   </head>
   <body>
-    <div class="terminal">
-      <header class="terminalHeader">
-        <div class="ascii history">
-          <pre> <p>benns@terminal</p><span>Not a corporation. All rights reserverd ®</span>
-
-██████╗ ███████╗███╗   ██╗███╗   ██╗███████╗                     
-██╔══██╗██╔════╝████╗  ██║████╗  ██║██╔════╝                     
-██████╔╝█████╗  ██╔██╗ ██║██╔██╗ ██║███████╗                     
-██╔══██╗██╔══╝  ██║╚██╗██║██║╚██╗██║╚════██║                     
-██████╔╝███████╗██║ ╚████║██║ ╚████║███████║                     
-╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝                     
-                                                                 
-████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗     
-╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║     
-   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║     
-   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║     
-   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗
-   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝</pre>
-        </div>
-        <div class="help">
-          <p class="help">
-            Welcome to my terminal portfolio <br />
-            For the list of available commands,type 'help'
-          </p>
-        </div>
-        <div class="container">
-          <p class="prefix">\visitor@local:~</p>
-          <input type="text" required id="prompt" />
-        </div>
-      </header>
-      <main class="terminalOutput">
-        <div>
-          <p class="output"></p>
-        </div>
-      </main>
+    <div id="terminal">
+      <div id="terminalOutput"></div>
+      <div class="terminalHeader">
+        <span>\visitor@local:~ $</span>
+        <input
+          type="text"
+          id="userPrompt"
+          autocomplete="off"
+          autofocus
+          required
+        />
+      </div>
     </div>
+
     <script src="./assets/js/caret.js"></script>
     <script src="./assets/js/typing.js"></script>
     <script src="./assets/js/commands.js"></script>
