@@ -1,6 +1,6 @@
 // Informações para a saída dos comandos
-let mail = "click here to email me";
-let threads = "https://www.threads.com/@__benns";
+mail = "click here to email me";
+threads = "https://www.threads.com/@__benns";
 
 help = [
   "<br>",
@@ -29,7 +29,7 @@ myprojects = ["🚧 In maintenance 🚧"];
 email = [
   "<br>",
   "Don't email me. Unless if you have work for me, than it's okay.",
-  '<a href="mailto:bfilipe42@gmail.com>"' + mail + "</a>",
+  '<a href="mailto:bfilipe42@gmail.com>"email me</a>',
 ];
 
 socials = ["<br>", "Threads:" + threads];
