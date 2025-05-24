@@ -39,6 +39,14 @@ window.addEventListener("keyup", function (event) {
   // captar tecla enter
   if (event.key === "Enter") {
     const command = input.value.trim().toLowerCase(); // Pega o valor do input e transforma em minusculas e sem espaços
+
+    // Criar linha de comando para o input aparecer
+    const userLine = document.createElement("pre");
+    userLine.classList.add("userLine");
+    userLine.innerHTML =
+      "<span class='line'>visitor@local:~ $</span>" + command; // Adiciona o comando digitado
+    terminalOutput.appendChild(userLine);
+
     input.value = ""; // Limpa o input depois de capturar a tecla
     executeCommand(command);
   }
@@ -74,7 +82,7 @@ function executeCommand(command) {
     default:
       showOutputAnimated(
         [
-          "<br>]",
+          "<br>",
           [
             "<pre class='colorLiner'>Command not found! Try <span class='command'>'help'</span> for a list of available commands.</pre>",
           ],
