@@ -1,1 +1,111 @@
+@import url(./variables.css);
+@import url(./animation.css);
 
+/*
+*Global Styles
+*/
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  font-family: "Inconsolata", monospace;
+  font-size: 1.8rem;
+  color: var(--white);
+  margin: 0 auto;
+  padding: 25px;
+  height: 93vh;
+  width: 96vw;
+}
+
+span {
+  color: var(--color1);
+  font-size: 1.8rem;
+}
+
+input {
+  caret-color: var(--color1);
+  background-color: transparent;
+  color: var(--color3);
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 1.5px;
+  font-size: 1.8rem;
+  color: var(--color3);
+}
+
+/*
+*HTML Styles
+*/
+
+.terminalOutput {
+  letter-spacing: 0px;
+  line-height: 1.2;
+  white-space: pre;
+}
+
+.terminalInput {
+  padding-bottom: 50px;
+}
+
+.prefix {
+  color: var(--color3);
+  text-shadow: 1px 1px 5px var(--color3);
+}
+
+/*
+*Javascript Styles
+*/
+
+.index {
+  color: var(--color4);
+  text-shadow: 1px 1px 5px var(--color4);
+}
+
+.bannerColor1 {
+  color: var(--color1);
+  text-shadow: 1px 1px 5px var(--color1);
+  letter-spacing: 0px;
+}
+
+.bannerColor2 {
+  color: var(--color4);
+  text-shadow: 1px 1px 5px var(--color4);
+  letter-spacing: 0px;
+}
+
+.colorLiner {
+  color: var(--color1);
+}
+
+.command {
+  color: var(--color4);
+  text-shadow: 1px 1px 10px var(--color4);
+}
+
+.userLine {
+  color: var(--color3);
+  letter-spacing: 1.5px;
+  font-size: 1.6rem;
+}
+
+.whois {
+  color: var(--color3);
+}
+
+.name {
+  color: var(--color1);
+  text-shadow: 1px 1px 5px var(--color1);
+}
