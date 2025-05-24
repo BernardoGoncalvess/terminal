@@ -109,3 +109,7 @@ a {
   color: var(--color1);
   text-shadow: 1px 1px 5px var(--color1);
 }
+
+.output {
+  margin: 0;
+}

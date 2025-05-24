@@ -1,10 +1,10 @@
-<div align = "center">
-<h1>Terminal</h1>
-<p>Welcome to my interactive terminal!<p>
+<div align = "left">
+<h1>Welcome to my interactive terminal</h1>
 </div>
 
-<div align = "center">
-<img src="./terminalScreenShot.png" alt="Terminal screenshot">
-<p>Here you can play for a bit.</p>
-<p>If you type "Help" you can check the available commands on the terminal</p>
+<div align = "left">
+<h2>Description</h2>
+<pre>
+This is just a little project of mine inspired by <a href="https://github.com/ForrestKnight">Forrest Knight</a>
+</pre>
 </div>
