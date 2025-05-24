@@ -9,5 +9,6 @@
 </div>
 
 <div align="left">
+<h3>[!screenshot!]</h3>
 <img src="./projectScreenshot.png" alt="Terminal screenshot" />
 </div>
